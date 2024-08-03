@@ -3,7 +3,7 @@ import { useGlobalContext } from "./Context";
 
 const Stories = () => {
   const context = useGlobalContext();
-  const { hits, nbPages } = context;
+  const { hits, nbPages, removePost } = context;
   return (
     <div>
       <h2>My Tech Posts</h2>
@@ -19,7 +19,7 @@ const Stories = () => {
             </p>
             <div className="card-button">
               <a href={url} target="_blank" >Read More</a>
-              <a href="#">Remove</a>
+              <a href="#" onClick={()=>removePost(objectID)} >Remove</a>
             </div>
           </div>
           </>
