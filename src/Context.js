@@ -25,6 +25,13 @@ const AppProvider = ({ children }) => {
             const res = await fetch(url);
             const data = await res.json();
             // console.log(data)
+            dispatch({
+                type:"Get_Stories",
+                payload:{
+                    hits:data.hits,
+                    nbPages:data.nbPages
+                }
+            })
         } catch (error) {
             console.log(error)
         }
