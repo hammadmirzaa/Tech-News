@@ -4,7 +4,6 @@ const reducer = (state, action) => {
             return{
                 ...state,
                 hits:action.payload.hits,
-                nbPages:action.payload.nbPages
             };
             case "Remove_Post":
                 return {

@@ -29,7 +29,6 @@ const AppProvider = ({ children }) => {
                 type:"Get_Stories",
                 payload:{
                     hits:data.hits,
-                    nbPages:data.nbPages
                 }
             })
         } catch (error) {

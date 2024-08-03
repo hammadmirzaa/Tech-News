@@ -3,7 +3,7 @@ import { useGlobalContext } from "./Context";
 
 const Stories = () => {
   const context = useGlobalContext();
-  const { hits, nbPages, removePost } = context;
+  const { hits, removePost } = context;
   return (
     <div>
       <h2>My Tech Posts</h2>
