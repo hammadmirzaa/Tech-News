@@ -7,6 +7,7 @@ import { useGlobalContext } from './Context';
 
 function App() {
   const data = useGlobalContext()
+  
   return (
     <>
     <div className="App">
