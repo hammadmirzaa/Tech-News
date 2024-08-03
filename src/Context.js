@@ -42,7 +42,7 @@ const AppProvider = ({ children }) => {
     }, []);
 
     return (
-        <AppContext.Provider value={"This is Hammad here"} >
+        <AppContext.Provider value={{...state}} >
             {children}
         </AppContext.Provider>
     )
