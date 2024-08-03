@@ -42,12 +42,19 @@ const AppProvider = ({ children }) => {
     })
 }
 
+const searchPost = (searchQuery) => {dispatch({
+    type:"Search_Post",
+    query:searchQuery
+})
+
+}
+
     useEffect(() => {
         fetchApiData(`${API}query=${state.query}&page${state.page}`)
-    }, []);
+    }, [state.query]);
 
     return (
-        <AppContext.Provider value={{...state, removePost}} >
+        <AppContext.Provider value={{...state, removePost, searchPost}} >
             {children}
         </AppContext.Provider>
     )
