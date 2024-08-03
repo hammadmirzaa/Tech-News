@@ -8,7 +8,7 @@ const Stories = () => {
     try {
       const res = await fetch(url);
       const data = await res.json();
-      console.log(data)
+      // console.log(data)
     } catch(error){
       console.log(error)
     }
@@ -17,6 +17,8 @@ const Stories = () => {
   useEffect(()=>{
     fetchApiData(API)
   },[]);
+
+
   return (
     <div>Stories</div>
   )
