@@ -6,7 +6,6 @@ const Stories = () => {
   const { hits, removePost } = context;
   return (
     <div>
-      <h2>My Tech Posts</h2>
       <div className="stories-div">
       {hits.map((hit) => {
         const {title, author, objectID, url, num_comments} = hit;

@@ -8,9 +8,6 @@ function App() {
 
   return (
     <>
-    <div className="App">
-      Welcome to Tech  News 
-    </div>
     <Search/>
     <Pagination/>
     <Stories/>
